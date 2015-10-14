@@ -1,0 +1,199 @@
+[class*="btn-"]{
+	outline:0;
+	&:focus, &:focus:active{
+		outline:0;
+		color:@color_white;
+	}
+	&:active, &.active{
+		box-shadow:inset 0 3px 5px rgba(0,0,0,0)
+	}
+}
+.btn-menu{
+	position:absolute;
+	right:38px;
+	background:transparent;
+	.border_radius(0px);
+	padding:6px 12px 6px;
+	display:none;
+	.icon-bar{
+		background:@color_white;
+		width:20px;		
+		height:1px;
+		margin-bottom: 3px;
+		display: block;
+	}
+}
+.collapse-button{
+	display:none;
+	float:right;
+	font-size:@font-size-lg-big;
+	color:@color_white;
+	margin-top:12px;
+	margin-right:12px;
+	&:hover{
+		cursor:pointer;
+	}
+}
+.btn-save{
+	background-color:@color_blue;
+	color:@color_white;
+	font-size:@font-size-default;
+	border:1px solid @color_blue;
+	padding:7px 12px;
+	.transition(0.3s, ease);
+	&:hover, &:active, &:focus{
+		background-color:@color-light-blue;
+		color:@color_white;
+	}
+}
+.btn-remove{
+	background-color:@color_pink;
+	color:@color_white;
+	font-size:@font-size-default;
+	border:1px solid @color_pink;
+	padding:7px 12px;
+	.transition(0.3s, ease);
+	&:hover, &:active, &:focus{
+		background-color:lighten(@color_pink, 10%);
+		color:@color_white;
+	}
+}
+.btn-add{
+	background-color:@color_white;
+	border:1px solid @color_blue;
+	font-size:@font-size-default;
+	padding:7px 12px;
+	color:@color_blue;
+	.transition(0.3s, ease);
+	&:hover, &:active, &:focus{
+		background-color:@color_blue;
+		color:@color_white;
+	}
+}
+.btn-link{
+	padding:0px;
+	border:none;
+	background:none;
+	.link();
+	&:hover, &:focus, &:active, &:focus:active{
+		background:none;
+	}
+}
+.btn-facebook,
+.btn-twitter,
+.btn-youtube,
+.btn-linkedin,
+.btn-google,
+.btn-instagram{
+	position:relative;
+	padding:7px 12px 6px 35px;
+	.border_radius(4px);
+	color:@color_white;
+	font-size:@font-size-default;
+	.transition(0.3s, ease);	
+	&:before{
+		position: absolute;
+		height: 103%;
+		left: 0;
+		top: 0px;
+		line-height: 3;
+		font-size: 140%;
+		width: 28px;
+		font: normal normal normal 14px/1 FontAwesome;
+		display: inline-block;
+		padding-top:7px;
+		font-size:@font-size-large;		
+	}
+	&:hover, &:active{
+		color:@color_white;
+	}
+	&:active{
+		top:2px;
+	}
+}
+.btn-facebook{
+	background-color:@facebook;	
+	.box-shadow(0 3px darken(@facebook, 10%));
+	&:before{
+		border-right: 2px solid darken(@facebook, 10%);
+		content:'\f09a';
+	}
+	&:hover, &:active, &:focus{
+		background-color:darken(@facebook, 5%);
+	}
+}
+.btn-twitter{
+	background-color:@twitter;
+	.box-shadow(0 3px darken(@twitter, 10%));
+	&:before{
+		border-right: 2px solid darken(@twitter, 10%);
+		content:'\f099';
+	}
+	&:hover, &:active, &:focus{
+		background-color:darken(@twitter, 5%);
+	}
+}
+.btn-youtube{
+	background-color:@youtube;
+	.box-shadow(0 3px darken(@youtube, 10%));
+	&:before{
+		border-right: 2px solid darken(@youtube, 10%);
+		content:'\f167';
+	}
+	&:hover, &:active, &:focus{
+		background-color:darken(@youtube, 5%);
+	}
+}
+.btn-linkedin{
+	background-color:@linkedin;
+	.box-shadow(0 3px darken(@linkedin, 10%));
+	&:before{
+		border-right: 2px solid darken(@linkedin, 10%);
+		content:'\f0e1';
+	}
+	&:hover, &:active, &:focus{
+		background-color:darken(@linkedin, 5%);
+	}
+}
+.btn-google{
+	background-color:@google;
+	.box-shadow(0 3px darken(@google, 10%));
+	&:before{
+		border-right: 2px solid darken(@google, 10%);
+		content:'\f0d5';
+	}
+	&:hover, &:active, &:focus{
+		background-color:darken(@google, 5%);
+	}
+}
+.btn-instagram{
+	background-color:@insagram;
+	.box-shadow(0 3px darken(@insagram, 10%));
+	&:before{
+		border-right: 2px solid darken(@insagram, 10%);
+		content:'\f16d';
+	}
+	&:hover, &:active, &:focus{
+		background-color:darken(@insagram, 5%);	
+	}
+}
+
+.create_account{
+	.transition(0.3s, ease);	
+	padding:6px 12px 6px 30px;
+	position:relative;
+	&:before{
+		position: absolute;
+		height: 100%;
+		left: 0;
+		top: 0px;
+		line-height: 3;
+		font-size: 140%;
+		width: 28px;
+		font: normal normal normal 14px/1 FontAwesome;
+		display: inline-block;
+		padding-top:6px;
+		font-size:@font-size-large;	
+		content:'\f055';	
+	}
+}

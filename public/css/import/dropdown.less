@@ -1,0 +1,112 @@
+select{
+	&.chosen-select{
+		width:100%;
+		margin-bottom:20px;
+		padding:8px;
+		color:@color_black;
+		font-size:@font-size-sm;
+		border:1px solid @color_hover_e;
+		.box-shadow (inset 0 1px 1px rgba(0,0,0,.075));
+		&:focus{
+			border:1px solid @color_blue;
+			outline:none;
+		}
+	}
+}
+.chosen-container {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	zoom: 1;	 
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;		
+	width:100% !important;	
+	height:34px;
+	border:1px solid @color_border;
+	& *{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}	
+	a{				
+		cursor: pointer;
+	}
+	.chosen-drop{
+		display:none;
+		z-index:1000;
+		position:absolute;
+		width:100%;
+		background-color:@color_white;
+		border-right:1px solid @color_border;
+		border-left:1px solid @color_border;
+		border-bottom:1px solid @color_border;
+		margin-bottom:20px;
+		.box-shadow(0px 0px 5px 1px @color_drop);		
+		.chosen-results{
+			list-style:none;
+			max-height:340px;
+			overflow-y: auto;
+			margin-bottom:0px;
+			li{
+				width:100%;
+				color:@color_black;
+				padding:10px;
+				font-size:@font-size-sm;
+				em{
+					.bold();
+					font-style:normal;
+				}
+				&:hover{
+					background-color:@color_blue;
+					color:@color_white;
+					cursor:pointer;
+				}
+				&.result-selected{
+					background-color:@color_locked;
+					&:hover{
+						color:@color_black;
+					}
+				}
+			}
+		}
+	}
+	&.chosen-with-drop .chosen-drop{
+		display:block !important;
+	}
+	.chosen-single{	
+		position: relative;
+		display: block;
+		overflow: hidden;		  
+		background-clip: padding-box;		 
+		text-decoration: none;
+		white-space: nowrap;
+		line-height: 24px;
+		height:34px;		
+		span{
+			color:@color_black;
+			display: block;
+			overflow: hidden;
+			margin-right: 31px;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			padding-top:5px;
+			padding-left:10px;
+			font-size:@font-size-sm;
+		}
+		.button-select {
+			background-color:@color_locked;
+			top:0px;
+			right:0px;
+			width:32px;
+			height:32px;
+			position:absolute;
+			b{
+				.pullCenter();
+				width:10px;
+				height:16px;
+				color:@color_text;
+			}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+<?php echo $this->template->layout_yield(); ?>

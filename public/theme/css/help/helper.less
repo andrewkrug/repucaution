@@ -1,0 +1,124 @@
+/*---------[ Show ]-----------*/
+@import 'show.less';
+/*---------[ Align ]-----------*/
+@import 'align.less';
+/*---------[ Width ]-----------*/
+@import 'width.less';
+
+
+@sizer:30;
+.font-size (@index) when (@index > 7){ 
+	.font-size-@{index}{
+		width:@index*1px;
+	}
+  .font-size (@index - 1);
+}
+
+.font-size (@sizer);
+
+@offset:40;
+.padding (@index) when (@index > -1){ 
+	.p-@{index} { 
+		padding: 1px * @index;
+	}
+	.p-t@{index} { 
+		padding-top: 1px * @index;
+	 }
+	.p-tr@{index} { 
+		padding-top: 1px * @index; 
+		padding-right: 1px * @index;
+	}
+	.p-tb@{index} { 
+		padding-top: 1px * @index;
+		padding-bottom: 1px * @index;
+	}
+	.p-tl@{index} {
+		padding-top: 1px * @index;
+		padding-left: 1px * @index;
+	}
+	.p-r@{index} { 
+		padding-right: 1px * @index;
+	}
+	.p-rb@{index} { 
+		padding-right: 1px * @index;
+		padding-bottom: 1px * @index;
+	}
+	.p-rl@{index} { 
+		padding-right: 1px * @index;
+		padding-left: 1px * @index;
+	}
+	.p-l@{index} { 
+		padding-left: 1px * @index;
+	}
+	.p-bl@{index} { 
+		padding-left: 1px * @index;
+		padding-bottom: 1px * @index;
+	}
+	.p-b@{index} { 
+		padding-bottom: 1px * @index;
+	}
+	.padding (@index - 1);
+}
+.padding(0){};
+.padding (@offset);
+
+.margin (@index) when (@index > -1){ 
+	.m-@{index} { 
+		margin: 1px * @index;
+	}
+	.m-t@{index} {
+		margin-top: 1px * @index;
+	}
+	.m-tr@{index} {
+		margin-top: 1px * @index;
+		margin-right: 1px * @index;
+	}
+	.m-tb@{index} {
+		margin-top: 1px * @index;
+		margin-bottom: 1px * @index;
+	}
+	.m-tl@{index} {
+		margin-top: 1px * @index;
+		margin-left: 1px * @index;
+	}
+	.m-r@{index} {
+		margin-right: 1px * @index;
+	}
+	.m-rb@{index} {
+		margin-right: 1px * @index;
+		margin-bottom: 1px * @index;
+	}
+	.m-rl@{index} {
+		margin-right: 1px * @index;
+		margin-left: 1px * @index;
+	}
+	.m-l@{index} {
+		margin-left: 1px * @index;
+	}
+	.m-bl@{index} {
+		margin-left: 1px * @index;
+		margin-bottom: 1px * @index;
+	}
+	.m-b@{index} {
+		margin-bottom: 1px * @index;
+	}
+
+	.margin (@index - 1);
+}
+.margin(0){};
+.margin (@offset);
+
+.offset (@index) when (@index > -1){ 
+	.top-@{index} { top: 1px * @index; }
+	.right-@{index} { right: 1px * @index; }
+	.bottom-@{index} { bottom: 1px * @index; }
+	.left-@{index} { left: 1px * @index; }
+	.top--@{index} { top: -1px * @index; }
+	.right--@{index} { right: -1px * @index; }
+	.bottom--@{index} { bottom: -1px * @index; }
+	.left--@{index} { left: -1px * @index; }
+
+	.offset (@index - 1);
+}
+.offset(0){};
+.offset (@offset);

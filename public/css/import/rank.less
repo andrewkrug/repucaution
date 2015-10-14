@@ -1,0 +1,19 @@
+.rank{
+	margin-top:20px;
+	.rank_neutral{
+		color:@color_text;
+	}
+	.rank_good{
+		color:@color_green;
+	}
+	.rank_bad{
+		color:@color_pink;
+	}
+	tr{
+		td, th{
+			&:nth-child(2), &:nth-child(3){
+				text-align:center;
+			}
+		}
+	}
+}

@@ -1,0 +1,37 @@
+.admin-users {
+    text-align: left;
+    border: 1px solid #737171;
+    border-collapse: collapse;
+}
+
+.admin-users td,
+.admin-users th,
+.admin-api-keys th,
+.admin-api-keys td,
+.admin-api-keys th
+{
+    border: 1px solid #737171;
+    padding: 5px;
+}
+
+.admin-api-keys input {
+    width: 400px;
+}
+
+.admin-users-actions {
+    list-style-type: none;
+    margin: 0px;
+}
+
+.alert-success .message {
+    width: auto;
+    margin-bottom: 10px;
+}
+.loading {
+    min-height: 70px;
+    background: url(../../images/ajax-loader.gif) center center no-repeat;
+}
+
+.connected.sortable.list > *{
+    cursor: move;
+}

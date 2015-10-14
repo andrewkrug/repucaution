@@ -1,0 +1,35 @@
+{
+    "name": "ikantam/repucaution",
+    "type": "project",
+    "description": "Track and manage social media accounts of your business",
+    "autoload": {
+        "psr-0": {
+            "": "application/src/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin",
+        "preferred-install": "dist"
+    },
+    "require": {
+        "php": ">=5.3.0",
+        "pimple/pimple": "2.0.*@dev",
+        "knplabs/gaufrette": "0.1.*",
+        "gargron/fileupload": ">=1.0, <2.0",
+        "symfony/http-foundation": "2.3.*",
+        "imagine/imagine": "~0.5.0",
+        "stack/builder": "1.0.*@dev",
+        "lightsuner/stack-codeigniter": "dev-develop",
+        "swiftmailer/swiftmailer": "@stable",
+		"symfony/config": "v2.4.2",
+		"symfony/yaml": "v2.3.11",
+        "symfony/security": "2.3.*@dev",
+        "lightsuner/plan-features-acl": "dev-master",
+        "knplabs/knp-menu": "2.0.*@dev",
+        "omnipay/omnipay": "2.0.*@dev",
+        "drewm/mailchimp-api": "dev-master",
+        "stripe/stripe-php": "2.*",
+        "google/apiclient": "1.0.*@beta",
+        "visualappeal/piwik-php-api": "^1.2"
+    }
+}

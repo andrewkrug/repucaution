@@ -1,0 +1,32 @@
+#customBtn {
+      display: inline-block;
+      background: #dd4b39;
+      color: white;
+      width: 180px;
+      border-radius: 2px;
+      white-space: nowrap;
+    }
+    #customBtn:hover {
+      background: #e74b37;
+      cursor: hand;
+    }
+    span.label {
+      font-weight: bold;
+    }
+    span.icon {
+      background: url('/public/images/gi.png') transparent 5px 50% no-repeat;
+      display: inline-block;
+      vertical-align: middle;
+      width: 35px;
+      height: 30px;
+      border-right: #bb3f30 1px solid;
+    }
+    span.buttonText {
+      display: inline-block;
+      vertical-align: middle;
+      padding:auto;
+      font-size: 10px;
+      font-weight: bold;
+      /* Use the Roboto font that is loaded in the <head> */
+      font-family: 'Roboto',arial,sans-serif;
+    }

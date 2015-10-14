@@ -1,0 +1,16 @@
+.idea/
+system/
+application/cache/
+application/logs/
+application/vendor/
+application/config/activemq.php
+application/config/database.php
+application/config/deploy.php
+application/config/datamapper.php
+application/config/demo_settings.php
+public/uploads/
+vendor/.git
+tmp_uploads/*
+!tmp_uploads/.gitkeep
+deploy.logpublic/themes/
+.htaccess

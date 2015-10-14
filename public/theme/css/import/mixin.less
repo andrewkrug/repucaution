@@ -1,0 +1,36 @@
+.font(@color_text, @font_family, @font-size){
+	color:@color_text;
+	font-family: @font_family;
+	font-size:@font-size;
+}
+.transition(@seconds, @method){
+	-webkit-transition: all @seconds @method;
+	-moz-transition: all @seconds @method;
+	-o-transition: all @seconds @method;
+	transition: all @seconds @method;
+}
+.border_radius(@size){
+	-moz-border-radius: @size;
+	-webkit-border-radius: @size;
+	-o-border-radius: @size;
+	border-radius: @size;
+}
+.box-sizing{
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.box-shadow (@settings){
+	-webkit-box-shadow: @settings;
+	-moz-box-shadow: @settings;
+	-o-box-shadow: @settings;
+	box-shadow: @settings;
+}
+.transform(@degree){	
+	-webkit-transform: rotate(@degree);
+	-moz-transform: rotate(@degree);
+	-ms-transform: rotate(@degree);
+	-o-transform: rotate(@degree);
+	transform: rotate(@degree);
+}

@@ -1,0 +1,71 @@
+.tarif_plan{
+	margin-top:20%;
+	border:1px solid @price_border;
+	.box-shadow (0 3px 10px -4px rgba(0,0,0,.9));
+	.plan-name{
+		padding:15px;
+		text-align:center;
+		background-color:@color_blue;		
+		margin:0px;
+		.font(@color_white, @montSerrat, @font-size-fa);
+	}
+	.plan-price{
+		 font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+		 background-color:darken(@color_blue, 10%);
+		 .plan-price_list{
+		 	margin:0px;
+			padding:0px;
+			.plan-price_list_item{
+				list-style:none;
+				.plan-price_title{
+					margin-bottom: 0;
+					margin-top: 0;
+					text-align:center;
+					font-size: 35px;
+					padding: 10px 0;
+					font-weight: @font-weight-bold;
+					color: @color_white;
+					.price-cents{
+						font-size: 50%;
+						vertical-align: super;
+						margin-left: -10px;
+					}
+					.price-month{
+						font-size: 30%;
+						font-style: italic;
+						margin-left: -20px;
+						font-weight: 300;
+					}					
+				}
+			}
+		}
+	}
+	&.featured{
+		-webkit-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+		transform: scale(1.05);
+		.box-shadow (0 3px 20px -4px rgba(0,0,0,.9));
+		.plan-name{
+			background-color:darken(@color_blue, 20%);	
+		}
+	}
+	.tarif_plan_list{
+		margin:0px;
+		padding:0px;
+		.tarif_plan_list_item{
+			list-style:none;
+			padding:5px 20px;
+			border-bottom:1px solid @price_border;
+			.font(@color_text, @roboto, @font-size-strong );
+			span{
+				font-weight:@font-weight-bold;
+			}
+			.fa{
+				margin-right:10px;
+			}
+		}
+	}
+	.btn-save{
+		font-size:17px;
+	}
+}

@@ -1,0 +1,130 @@
+@value:5;
+.ratingWidth (@index) when (@index > 0){
+  @string:round(@index, 1);
+  .rating[data-value="@{string}"] .rating_bar{
+    width:@string*100%/5;
+  }
+  .ratingWidth (@index - 0.1);
+}
+.ratingWidth(0.1){}
+.ratingWidth (@value);
+
+.rating{
+  width:100%;
+  position:relative;
+  height:4px;
+  border:1px solid @color_hover_e;
+  .rating_bar{
+    position:absolute;
+    height:4px; 
+    background-color:@color_green;
+    top:-1px;
+    left:0;
+    bottom:0;
+  }
+}
+.rating_text{
+  .font(@color_text, @montSerrat, @font-size-strong);
+  padding-top:10px;
+  position:relative;
+  &:before{
+    position:absolute;
+    content:'';
+    width:1px;
+    height:10px;
+    top:-7px;    
+    background-color:@color_text;
+  }
+  &.text-left{
+    &:before{
+      left:0;
+    }
+  }
+  &.text-right{
+    &:before{
+      right:0;
+    }
+  }
+  &.text-center{
+    &:before{
+      left:0;
+      right:0;
+      bottom:0;  
+      margin-left:auto;    
+      margin-right:auto;    
+    }
+  }
+}
+.review-column{
+  paddinng-left:15px;
+  padding-right:15px;
+  float:left;
+  width:25%;
+}
+.review{
+  padding:10px;
+  .review_text{
+     text-align:center;
+     font-size:@font-size-large;
+     font-family:@roboto;
+     display:block;
+     width:100%;
+     span{
+        display:block;
+        font-size:@font-size-lg-big;
+        font-family:@montSerrat;
+     }
+  }
+  &.review_total{      
+       .review_text{
+          color:@color_black;
+          position:relative;
+          &:before, &:after{
+            content:'';
+            position:absolute;
+            width:30px;
+            height:2px;
+            right:0;
+            background-color:@color_hover_e;
+          }
+          &:before{
+            top:20px;
+            .transform(45deg);
+          }
+          &:after{
+            bottom:20px;
+            .transform(-45deg);
+          }
+       }
+  }
+  &.review_positive{
+      .review_text{
+         color:@color_green;
+       }
+  }
+  &.review_negative{
+    .review_text{
+      color:@color_pink;
+     }
+  }
+  &.review_neutral{
+     .review_text{
+        color:@color_wait;
+     }
+  }
+}
+
+.recent_review{
+  .recent_review_title{
+    .font(@color_span, @raleway, @font-size-lg);
+    font-weight:@font-weight-bold;
+  }
+  .recent_review_date{
+    .font(@color_span, @roboto, @font-size-default);
+  }
+  .recent_review_text{
+    .font(@color_span, @roboto, @font-size-lg);
+    margin-bottom:0px;
+    margin-top:10px;
+  }
+}

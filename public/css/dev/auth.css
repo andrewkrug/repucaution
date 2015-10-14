@@ -1,0 +1,90 @@
+/* 
+	.login-block { margin-top: 10%; }
+	.plans-block, .register-block { margin-top: 5%; } 
+*/
+
+.payment-block {
+    margin-top: 0%;
+}
+
+.plans-block {
+    text-align: center;
+}
+
+.plans-block > .features {
+    float: left;
+    margin-left: 40px;
+}
+
+.plans-block > .features ul {
+    margin: 0px;
+    padding: 0px;list-style-type: none;
+    list-style-type: disc;
+}
+
+.plans-block > .features ul li {
+    text-align: left;
+}
+
+.plans-block > .plans {
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 30px;
+} 
+
+
+.plans-block > .plan {
+    font-family: 'dinregular';
+    color: #595F6B;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 20px;
+}
+
+.plans-block > .plan .name {
+    margin-bottom: 10px;
+}
+
+.plans-block > .plan .price {
+    font-size: 20px;
+}
+
+.plans-block > .plan-features {
+    /* float: left; */
+    margin-left: 20px;
+	text-align: left;
+	margin-left: 20px;
+	min-height: 70px;
+	clear: both;
+}
+
+.plans-block > .plan-features ul {
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+.plans-block .clearfix {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 20px;
+}
+
+.plans-block a:hover {
+    text-decoration: none;
+    background: #323232;
+    color: #FFFFFF;
+}
+
+.alert {
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+
+.message-error {
+    margin-left: 30%;
+    line-height: 20px;
+}

@@ -1,0 +1,148 @@
+.user_account{
+	margin-bottom:10px;
+	padding: 20px;
+	.pull_border();
+	.user_account_name{
+		.font(@color_span, @raleway, @font-size-large);
+		margin-top:10px;
+	}
+	.user_account_image{
+		width:40px;
+		height:40px;
+		margin-right:20px;
+	}
+	&.account_facebook{
+		border-left:2px solid @facebook;
+	}
+	&.account_twitter{
+		border-left:2px solid @twitter;
+	}
+	&.account_youtube{
+		border-left:2px solid @youtube;
+	}
+	&.account_instagram{
+		border-left:2px solid @insagram;
+	}
+	&.account_google{
+		border-left:2px solid @google;
+	}
+	&.account_linkedin{
+		border-left:2px solid @linkedin;
+	}
+}
+.choose_account{
+	padding:20px 20px 15px 20px;
+	position:relative;	
+	margin-bottom:20px;
+	.choose_account_title{
+		position:absolute;
+		background-color:@color_white;
+		font-size:@font-size-lg;
+		top:-7px;
+		margin:0px;
+		padding-left: 5px;
+  		padding-right: 5px;
+  		font-family:@roboto;
+	}
+	&.account_facebook{
+		border:1px solid @facebook;
+		.choose_account_title{
+			color:@facebook;
+		}
+	}
+	&.account_twitter{
+		border:1px solid @twitter;
+		.choose_account_title{
+			color:@twitter;
+		}
+	}
+	&.account_youtube{
+		border:1px solid @youtube;
+		.choose_account_title{
+			color:@youtube;
+		}
+	}
+	&.account_instagram{
+		border:1px solid @insagram;
+		.choose_account_title{
+			color:@insagram;
+		}
+	}
+	&.account_google{
+		border:1px solid @google;
+		.choose_account_title{
+			color:@google;
+		}
+	}
+	&.account_linkedin{
+		border:1px solid @linkedin;
+		.choose_account_title{
+			color:@linkedin;
+		}
+	}
+	.choose_account_list{
+		list-style:none;
+		margin-bottom:0px;
+		.choose_account_list_item{
+			margin-bottom:10px;
+			padding-top: 5px;
+			.choose_account_list_image{
+				width:40px;
+				height:40px;
+				margin-right:20px;
+			}
+			.choose_account_list_name{
+				.font(@color_span, @raleway, @font-size-lg);
+				margin-top:13px;
+				width:163px;
+				.text-truncate();
+			}
+			&:last-child{
+				margin-bottom:0px;
+			}
+			&:hover{
+				cursor:pointer;
+				background-color:lighten(@color_hover_e, 3%);
+			}
+			&.account_checked{
+				outline:1px solid @color_blue;
+				background-color:lighten(@color_hover_e, 4%);				
+			}
+		}
+		.dTable{
+			width:auto !important;
+			float:left;			
+		}
+		.cb-inner{
+			float:left;
+			margin-top: 11px;
+			margin-left: 11px;
+			margin-right: 10px;
+		}
+	}
+}
+.group_account_item{
+	.pull_border();
+	border-left:2px solid @color_blue;
+	padding:20px;
+	margin-top:20px;
+	position:relative;
+	.group_account_title{
+		.font(@color_black, @raleway, @font-size-little-big);
+		margin-top:0px;
+		margin-bottom:0px;
+		padding-top:5px;
+		padding-bottom:5px;
+	}
+	.group_account_control{
+		position:absolute;
+		top:10px;
+		right:10px;
+	}
+}
+.add_group{
+	display:none;
+	.add_group_title{
+		.head_tab();
+	}
+}

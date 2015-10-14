@@ -1,0 +1,50 @@
+.pagination{
+	margin-bottom: 20px;
+	margin-top:0px;
+	.pagination_item{
+		margin-right:10px;
+		display:block;
+		float:left;
+		.pagination_link{
+			padding:5px 10px;
+			background-color: @color_white;
+			color:@color_border;
+			border:1px solid @color_border;			
+			.border_radius(0px);			
+		}
+		&.active{
+			.pagination_link{
+				color:@color_blue;
+				border:1px solid @color_blue;
+			}
+			&:hover, &.active{
+				.pagination_link{
+					background-color: @color_white;
+				}
+			}
+		}
+		&:hover, &.active{
+			.pagination_link{
+				color:@color_blue;
+			}
+		}
+		&.unactive{
+			.pagination_link{
+				color:@color_hover_e;
+				border:1px solid @color_hover_e;
+			}
+			&:hover{
+				.pagination_link{
+					cursor:default;
+					color:@color_hover_e;
+				}
+			}	
+		}
+		&.more_pages{
+			.pagination_link{
+				border:none;
+				color:@color_border;
+			}
+		}
+	}
+}

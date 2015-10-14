@@ -1,0 +1,349 @@
+@media all and (min-width:1200px){
+	
+}
+
+@media all and (max-width:1199px){
+	.traffic_block{
+		width:70%;
+		float:none;
+		padding-bottom:10px;
+		padding-right:0px;
+		&:last-child{
+			padding-bottom:0px;
+		}
+	}
+	.traffic_shedule{
+		float:none;
+	}
+	.settings_tab{
+		.setting_item{
+			width:100%;
+			text-align:center;
+			.setting_link{
+				[class*='ti-'], .fa{
+					display:inline-block;
+					float:none;
+				}
+			}
+			&.active{
+				.setting_link{
+					background-color:@color_hover_e;
+				}
+			}
+		}
+	}
+}
+@media all and (max-width:1199px) and (min-width:992px){
+	.sign_block{
+		width:30%;
+	}
+}
+
+@media all and (min-width:992px){
+	.sidebar{
+		display:block !important;		
+		&.active{
+			display:block !important;			
+		}
+	}
+	.head_nav{
+		display:block !important;
+	}
+}
+
+@media all and (max-width:992px){	
+	.btn-menu{
+		display:block;
+	}
+	.tarif_plan{
+		margin-top:10px;		
+		margin-bottom:20px;
+		&.featured{
+			-webkit-transform: scale(1.00);
+			-ms-transform: scale(1.00);
+			transform: scale(1.00);
+		}
+	}
+	.head_nav{
+		display:none;
+		position: absolute;
+		width: 100%;
+		top: 100%;
+		z-index:10;
+		background-color:@color_white;
+		border-bottom:1px solid @color_border;
+		.main-nav{
+			float:none;
+			margin-right:0px;
+			.main-nav_item{
+				float:none;
+				width:100%;
+				.main-nav_link{
+					width:100%;
+					border-top:1px solid @color_border;					
+					&.active, &:hover, &:focus, &:focus:active{
+						background-color:@color_poor_gray;
+						color:@color_text;
+						.fa{
+							color:@color_blue;							
+						}
+					}
+				}
+			}			
+		}
+		.user-nav{
+			float:none;
+			margin-right:0px;
+			.user-nav_item{
+				float:none;
+				width:100%;
+				text-align:center;
+				.user-nav_link{
+					width:100%;
+					border-top:1px solid @color_border;
+					color:@color_blue;
+					&:hover, &:focus, &:active{
+						color:@color_white;
+					}
+				}
+				.sub_menu{
+					display:block;
+					position:static;
+					border-width:0px;
+					width:100%;
+					&:before, &:after{
+						border-width:0px;
+					}
+					.user-nav_item{	
+						.user-nav_link{	
+							color:@color_blue !important;
+							padding:15px !important;
+							&.active{
+								background-color:@color-poor-blue !important;
+							}
+							&:hover, &:focus, &:active{
+								background-color:@color-poor-blue !important;
+								color:@color_white !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.collapse-button{
+		display:block;
+	}
+	.sidebar{
+		display:none;
+		position:static;
+		width:100%;
+		float:none;
+		border-right:none;
+		margin-top:0px;	
+	}
+	.page-wrapper, .wrapper, body, html{
+		height:auto;
+	}
+	.main{
+		margin-left:0px !important;
+		top:0px;
+		width:100%;
+		padding-top:0px;			
+	}
+	.header{
+		position:relative;
+		margin-bottom:0px;
+		.radar_content{
+			margin-right: -10px;
+		}
+	}
+	.block_content{			
+		.block_content_body{
+			&.calendar_body{
+				height:auto !important;
+				max-height:100%;
+			}
+			.block_content_footer{
+				position:static;
+				width:auto;
+				margin-bottom: -20px;
+			}
+			.radar_content{
+				margin-bottom:0px;
+			}
+		}		
+	}
+	.web_radar{
+		margin-top:20px;
+	}
+}
+
+@media all and (min-width:768px) and (max-width:992px){			
+	.i-twitter {
+		top: -20px;
+		right: -29px;
+	}	
+	.sign_block{
+		width:50%;
+	}
+}
+
+@media all and (max-width:767px){
+	.canvas-container{
+		width:100% !important;
+		canvas{
+			width:100% !important;
+		}
+	}
+	.account_item{
+		width:100%;
+	}
+	.traffic_block{
+		width:100%;
+	}
+	.main{
+		height:auto !important;		
+	}
+	
+	.dTable{
+		display:block;
+		.dRow{
+			.dCell{
+				display:block;
+				&.cellImg{
+					text-align:center;
+				}
+			}
+		}
+	}
+	.user_account{
+		&.dTable .dRow .dCell{
+			display:table-cell;
+		}
+	}
+	.settings_tab {
+		.setting_item.auto{
+			width:100%;
+		}
+	}
+	.feed{
+		.feed_block{
+			.feed_picture{
+				float:none;
+				margin-left:auto;
+				margin-right:auto;
+			}
+		}
+	}
+	.rank{
+		margin-bottom:20px;
+	}
+	.sign_block{
+		width:auto;
+		margin-right:15px;
+		margin-left:15px;
+	}
+	.date_range{
+		.daterangepicker{
+			width:262px;
+			.calendar{
+				float:none;
+				&.first{
+					margin-right:0px;
+					margin-bottom:20px;
+				}
+			}
+			[class*='daterangepicker_']{
+				float:none;
+				width:100%;
+				label{
+					display:none;
+				}
+			}
+			.daterangepicker_end_input{
+				float:none;
+				&:before{
+					width:0px;
+					height:0px;
+				}
+			}
+		}
+	}
+	.review{
+		&.review_total{      
+			.review_text{
+				&:before, &:after{
+					width:0px;
+					height:0px;
+				}
+			}
+		}
+	}
+	.main_block{
+		padding:15px;
+		padding-bottom:0px;
+	}
+	.block_content{
+		margin-bottom:20px;
+		.block_content_body{
+			padding-left: 10px;
+			padding-right: 10px;
+			&.dashboard_content{
+				height:auto;
+			}
+			.radar_content{
+				margin-left:-10px;
+				margin-right:-10px;
+				.radar_body{
+					padding:10px;
+				}
+			}
+			.block_content_footer{
+				margin-left:-10px;	
+				margin-right:-10px;					
+			}
+		}
+		.block_content_title{
+			padding:10px;
+		}
+	}
+	.trends_settings{
+		margin:-20px -10px;
+	}
+	.p-rl30.p-tb20{
+		padding-left:15px;
+		padding-right:15px;
+	}	
+	.rating_block{
+		[class*='col-xs-']{
+			padding-left:5px;
+			padding-right:5px;
+			.text-left{
+				&:before{
+					left:10px;
+				}
+			}
+			.text-right{
+				&:before{
+					right:10px;
+				}
+			}
+		}
+	}
+	.web_radar{
+		.web_radar_content{
+			.web_radar_image{
+				max-width:100%;
+			}
+			.web_radar_picture{
+				float:none;
+				margin-left:auto;
+				margin-right:auto;
+			}
+		}
+	}
+	.account{
+		width:100%;
+	}
+}

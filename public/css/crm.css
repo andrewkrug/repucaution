@@ -1,0 +1,216 @@
+@charset "utf-8";
+/* CSS Document */
+
+.mainLabel{
+	display: block;
+	float: left;
+	font-size: 14px;
+	margin: 20px 25px;
+	}
+.directory input.input-medium{
+	height:25px;
+	}
+.directory .black-btn{
+	margin-top:10px;
+	}
+.table{
+	margin:0 auto 25px auto;
+	width:90%;
+	}
+.table a{
+	color:#666666;
+	}
+.table a:hover{
+	color:#0188CA;
+	text-decoration:none;
+	}
+.table thead td{
+	padding-top:25px;
+	color:#999;
+	}
+.table .edit:hover,
+.name-block .edit{
+	color:#8DAF63;
+	}
+.table .del:hover,
+.name-block .del{
+	color:#F48B54;
+	}
+#loaderImage{
+	margin:20px auto;
+	}
+/*---------- contacts-block ---------*/
+.contacts-block{
+	padding-top:20px;
+	}
+.contacts-block .name-block{
+	margin:0 25px 25px 25px;
+	border-bottom:1px solid #ddd;
+	padding:25px 0 10px 0;
+	font-size:16px;
+	}
+.contacts-block .user-data{
+	margin-left:25px;
+	font-size:16px;
+	}
+.contacts-block .user-data span{
+	color:#999;
+	margin-right:10px;
+	width:150px;
+	display:inline-block;
+	}
+.contacts-block .user-data p{
+	margin-bottom:20px;
+	}
+.contacts-block .social{
+	display:inline-block;
+	width:45px;
+	height:45px;
+	background:url('../images/sprite.png') no-repeat;
+	vertical-align:middle;
+	}
+.contacts-block .social:hover{
+	opacity:0.8;
+	}
+.contacts-block .social.fb{
+	background-position:0 -110px;
+	}
+.contacts-block .social.tw{
+	background-position:-65px -110px;
+	}
+.contacts-block .social.inst{
+	background-position:-128px -110px;
+	}
+.contacts-block .filter-block{
+	margin:40px 25px 25px 25px;
+	border-bottom:1px solid #ddd;
+	margin-bottom:25px;
+	padding-bottom:10px;
+	}
+.contacts-block .filter-block span{
+	float:left;
+	color: #999;
+	margin-right: 10px;
+	width: 150px;
+	display: inline-block;
+	font-size:16px;
+	}
+.contacts-block .filter-block .filter-item{
+	cursor:pointer;
+	float:left;
+	font-size:16px;
+	margin-right:20px;
+	}
+.contacts-block .filter-block .filter-item.active, 
+.contacts-block .filter-block .filter-item:hover{
+	color:#0188CA;
+	}
+.socialBlock{
+	margin-left:25px;
+	margin-right:25px;
+	position:relative;
+	border-bottom:1px solid #ddd;
+	margin-bottom:25px;
+	min-height:165px;
+	}
+.socialBlock .avatar img{
+	width:100%;
+	max-width:100px;
+	margin-bottom:10px;
+	}
+.social-icon{
+	position:relative;
+	}
+.socialBlock .info .author{
+	font-size:16px;
+	}
+.socialBlock .info .author,
+.socialBlock .info .date{
+	display:inline-block;
+	margin-bottom:10px;
+	}
+.socialBlock .info .date{
+	float:right;
+	color:#999;
+	}
+.socialBlock .small-menu{
+	margin-left:0;
+	margin-bottom:25px;
+}
+.socialBlock .small-menu li{
+	float:left;
+	list-style:none;
+	margin-right:10px;
+	}
+.socialBlock .small-menu li a{
+	color:#999;
+	border-left:1px solid #999;
+	padding-left:10px;
+	}
+.socialBlock .small-menu li:first-child a{
+	border:none;
+	padding:0;
+	}
+.socialBlock .img-block{
+	width:inherit;
+	margin-bottom:25px;
+	}
+.socialBlock i{
+	width:32px;
+	height:32px;
+	display:block;
+	background:url('../images/sprite.png') no-repeat;
+	position: absolute;
+	top: -50px;
+	right: 0;
+}
+.formBox i{
+	width:32px;
+	height:32px;
+	display:inline-block;
+	background:url('../images/sprite.png') no-repeat;
+	position: relative;
+	margin-right:10px;
+	vertical-align:middle;
+}
+.fb_block i{
+	background-position:0 -164px;
+}
+.tw_block i{
+	background-position:-41px -165px;
+}
+.inst_block i{
+	background-position:-83px -165px;
+}
+.contacts-block.activity .socialBlock{
+	margin-left:0;
+	margin-bottom:0;
+	padding-top:25px;
+	padding-left:25px;
+	border-bottom:none;
+	}
+.contacts-block.activity .socialBlock.fb_block{
+	border-left:3px solid #3460A1;
+	}
+.contacts-block.activity .socialBlock.tw_block {
+	border-left:3px solid #80DDFC;
+	}
+.contacts-block.activity .socialBlock.inst_block {
+	border-left:3px solid #C78143;
+	}
+@media(max-width:660px){
+	.contacts-block .filter-block .filter-item{
+		float:none;
+		clear:both;
+		margin-bottom:5px;
+		}
+	.contacts-block .filter-block span{
+		margin-bottom:10px;
+		}
+	}
+@media(max-width:600px){
+	.contacts-block .user-data span{
+		display:block;
+		margin-bottom:10px;
+		}
+	}

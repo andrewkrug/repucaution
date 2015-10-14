@@ -1,0 +1,68 @@
+.responsive-table{
+	width:100%;
+	thead{
+		border-top:1px solid @color_hover_e;
+		border-bottom:1px solid @color_hover_e;
+		th{
+			.font(@color-p, @roboto, @font-size-default);
+			//font-weight:@font-weight-light;
+			padding-top:10px;
+			padding-bottom:10px;
+		}
+	}
+	tbody{
+		tr{
+			&:nth-child(odd){
+				background-color:@color_light_hover;
+			}
+			&.row-error{
+				background-color:lighten(@color_pink, 34%);
+			}
+			&.row-success{
+				background-color:lighten(@color_green, 55%);
+			}
+			td{
+				padding-top:10px;
+				padding-bottom:10px;
+				.font(@color_text, @roboto, @font-size-sm);
+				&.empty{
+					font-style:italic;
+					text-align:center;
+				}
+			}
+		}
+	}
+}
+
+.crm_profile{
+	td:first-child{
+		width:20%;
+	}
+}
+
+@media (max-width: 992px) {
+	.responsive-table{
+		.table_head { display: none; }
+		tr{
+			background:none !important;
+		}
+		td {
+			display: block;
+			text-align: center;
+			line-height: 100%;
+			border-width: 0 !important;
+			& + td {
+				border-top: 1px solid  @color_hover_e !important;
+			}
+			&:nth-child(odd) {
+				background-color: @color_light_hover;
+			}
+
+			&:before {
+				font-weight: bold;
+				display: inline-block;
+				content: attr(data-th)": ";
+			}			
+		}
+	}
+}

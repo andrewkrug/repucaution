@@ -1,0 +1,89 @@
+.well-upload-image{
+	background-color:lighten(@color_main_block,0.5%);
+	overflow:hidden;
+	.head_tab{
+		text-align:left;
+	}
+	.canvas-block{
+		text-align:left;		
+		overflow:hidden;
+		max-width: 512px;
+		margin:0 auto;
+		.canvas-container{		
+			width: 512px;
+			height: 256px;
+			margin:0px auto;
+			position: relative;			
+			-moz-user-select: none;
+			canvas{
+				padding: 0px;
+				margin: 0px;
+				border: 0px;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 512px;
+				height: 256px;
+				background: transparent;
+			}
+		}
+	}	
+	.chosen-container{
+		background-color:@color_white;
+		text-align:left;
+	}
+	.image-designer-bg-image{
+		margin-bottom:20px;
+		width:128px;
+		height:64px;
+	}
+	.chosen-select{
+		margin-bottom:0px;
+	}
+	.dropdown-menu{
+		.border_radius(0);
+		border:1px solid @color_hover_e;
+	}
+	.well_photo{
+		max-height:256px;
+		overflow-x:hidden;
+		overflow-y:auto;
+	}
+	.btn-share_twitter,
+	.btn-share_facebook,
+	.btn-share_buffer{
+		width:33.3%;
+		border:none;
+		.font(@color_white, @font-size-lg, @roboto);
+		padding-top:10px;
+		padding-bottom:10px;
+		.border_radius(0px);
+		display:block;
+		float:left;
+	}
+	.btn-share_twitter{
+		background-color:@twitter;
+		&:hover, &:active, &:focus{
+			background-color:lighten(@twitter,10%);
+		}
+	}
+	.btn-share_facebook{
+		background-color:@facebook;
+		&:hover, &:active, &:focus{
+			background-color:lighten(@facebook,10%);
+		}
+	}
+	.btn-share_buffer{
+		background-color:@color_black;
+		&:hover, &:active, &:focus{
+			background-color:lighten(@color_black,20%);
+		}
+	}
+	.image-designer-logo{
+		display:inline-block;
+		width:100%;
+		height:150px;
+		margin-right:10px;
+		margin-bottom:20px;
+	}
+}

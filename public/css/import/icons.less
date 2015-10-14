@@ -1,0 +1,81 @@
+.bgSprite{
+	background-image:url('../images/icons/sprites.png');
+}
+[class*='icon-']{
+	.bgSprite();
+}
+.icon-dashboard{	
+	background-position: -5px -5px;
+	width: 20px;
+	height: 20px;
+	display:block;
+}
+.i-twitter, .i-facebook, .i-google, .i-linkedin, .i-instagram{
+	position:absolute;
+	top:0px;
+	right:0px;
+	font-size:@font-size-lg-big !important;
+}
+.i-twitter{	
+	color:@color_blue;	
+}
+.cb-remove{
+	width: 13px;
+	height: 13px;
+	display: block;
+	position: absolute;
+	right: 11px;
+	top: 11px;
+	border:1px solid @color_pink;
+	&:after{
+		content: '';
+		background-color: @color_pink;
+		position: absolute;
+		display: block;
+		width: 7px;
+		height: 1px;
+		right: 2px;
+		top: 5px;
+	}
+	&:hover{
+		cursor:pointer;
+	}
+}
+.icon-left{
+	background-position:-52px -10px;
+	width: 7px;
+	height: 8px;
+	display:block;
+}
+.icon-right{
+	background-position:-111px -10px;
+	width: 7px;
+	height: 8px;
+	display:block;
+}
+.icon-star{
+	background-position:-156px -7px;
+	width: 18px;
+	height: 17px;
+	display:inline-block;
+	margin-right:3px;
+	&.active-rating{
+		background-position:-135px -7px;
+	}
+}
+
+.icon-group{
+	background-position:-10px -32px;
+	width: 40px;
+	height: 35px;
+	display:block;
+	float:left;
+	margin-right:15px;	
+}
+.icon-small-group{
+	background-position:-96px -31px;
+	width: 16px;
+	height: 16px;
+	padding-top:5px;
+	display:inline-block;	
+}

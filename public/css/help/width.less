@@ -1,0 +1,50 @@
+@count:100;
+.width (@index) when (@index > 0){ 
+	.w-@{index}{
+		width:@index*1%;
+	}
+	/*------------------[Md]--------------------*/
+	@media all and (min-width:992px){
+		.width (@index) when (@index > 0){ 
+			.w-md-@{index}{
+				width:@index*1%;
+			}
+		}
+	}
+	/*------------------[Sm]--------------------*/
+	@media all and (min-width:768px){
+		.width (@index) when (@index > 0){ 
+			.w-sm-@{index}{
+				width:@index*1%;
+			}
+		}
+	}
+	/*------------------[Xs]--------------------*/
+	@media all and (max-width:767px){	
+		.w-xs-33{
+			width:33.3333333%;
+		}
+		.w-xs-100{
+			width:100% !important;
+			.chosen-container{
+				width:100% !important;
+			}
+		}
+		.width (@index) when (@index > 0){ 
+			.w-xs-@{index}{
+				width:@index*1%;
+			}
+		}			
+	}
+	.width (@index - 10);
+}
+
+.width (@count);
+
+
+/*------------------[Sm]--------------------*/
+@media all and (min-width:768px) and (max-width:991px){
+	.w-sm-33{
+		width:33.3333333%;
+	}
+}

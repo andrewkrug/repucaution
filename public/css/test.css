@@ -1,0 +1,18 @@
+.avatar-container{
+    width:620px;
+    height:480px;
+    margin:0 0 -60px;
+    border:1px solid #CCCCCC;
+}
+.avatar-panel{
+    width:580px;
+    height:40px;
+    margin:0 15px;
+    padding:5px;
+    border:1px solid #CCCCCC;
+    text-align: center;
+}
+.preset-image{
+    border:1px solid #00b3ee;
+    margin:5px 10px;
+}

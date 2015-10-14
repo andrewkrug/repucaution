@@ -1,0 +1,103 @@
+.guide{
+	.main{
+		overflow-y: auto;
+		overflow-x: hidden;		
+		left: 0;
+		right: 0;
+		top: 65px;
+		bottom: 0;
+		position:relative;
+		margin-left: 16.66667% !important;
+	}
+	header{
+		height: 72px;
+	}
+	.navbar-fixed-top{
+		position:static!important;
+	}
+	.progressbar{
+		position:relative;
+		-webkit-box-shadow: 0px 0px 0px 0px white;
+		-moz-box-shadow: 0px 0px 0px 0px white;
+		-ms-box-shadow: 0px 0px 0px 0px white;
+		-o-box-shadow: 0px 0px 0px 0px white;
+		box-shadow: 0px 0px 0px 0px white;
+		border:none;
+		padding:0px;
+		width:100%;
+		top:20px;
+		.progressCondition{
+			margin-top:10px;
+			margin-bottom:10px;
+		}
+	}
+	.sidebar-guide{
+		position: fixed;
+		top: 55px;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		display: block;
+		padding: 20px;
+		overflow-x: hidden;
+		overflow-y: auto;
+		background-color: #f5f5f5;
+		border-right: 1px solid #eee;
+	}
+	.nav-sidebar{
+		margin-right: -21px;
+		margin-bottom: 20px;
+		margin-left: -20px;
+		list-style:none;
+		li{			
+			&:hover, &.active{				
+				a{
+					color:white;
+					background-color:@dark-blue;
+				}
+			}
+			a{
+				color:@dark-blue;
+				font-family: 'Montserrat', sans-serif;
+			}
+		}
+	}
+	.notification{
+		position:static;
+	}
+	.sub-header {
+		padding-bottom: 10px;
+		border-bottom: 1px solid #eee;		
+	}
+	h2.sub-header{
+		font-size:black;
+		font-size:30px;
+	}
+	.bscol {
+		color: #666;
+		text-shadow: 1px 1px 1px #fff;
+		padding: 15px;
+		background-color: #eee;
+	}
+	pre.prettyprint.prettyprinted {
+		padding: 20px !important;
+		border: 0 !important;
+		font-family: consolas;
+		font-size: 13.5px;
+	}
+}
+.doc-navbar{
+	padding-left:20px;
+	width:100%;
+	background-color:@dark-blue;
+	position:fixed;
+	z-index:1001;
+	padding-bottom:5px;
+}
+.progressbar-view{
+	margin-top:50px;
+	.progressbar{
+		position:relative;
+		bottom:0px;
+	}
+}

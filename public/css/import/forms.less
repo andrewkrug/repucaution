@@ -1,0 +1,76 @@
+.error_text{
+	display:none;
+	color:red;
+	margin-top:10px;
+}
+.form-group{
+	position:relative;
+	.form-control{
+		border:1px solid @color_hover_e;
+		.border_radius(0px);
+		&:active, &:focus{
+			border:1px solid @color_blue;
+		}
+	}
+	textarea{
+		resize:vertical;
+	}
+	.clear{
+		position:absolute;
+		right:10px;
+		top:10px;
+		color:@color_blue;
+		font-size:@font-size-lg;
+		&:hover{
+			cursor:pointer;
+		}	
+	}
+	&.has-error{
+		.form-control{
+			border:1px solid red;
+		}
+		.error_text{
+			display:block;
+		}
+	}
+	&.disabled{		
+		&:after{
+			background-position:-10px -7px;
+			width: 9px;
+			height: 11px;
+			.bgSprite();
+			position:absolute;
+			top:10px;
+			right:10px;
+			display:block;
+			content:'';
+		}
+	}
+	&.quantity-form{
+		position:relative;		
+		.decrementBtn, .incrementBtn{
+			position:absolute;
+			width:30px;
+			height:16px;
+			right:1px;
+			background-color:@color_light-gray;
+			border-right:1px solid @color_hover_e;
+			border-left:1px solid @color_hover_e;
+			padding-left: 9px;
+			&:active{
+				background-color:darken(@color_light-gray,5%);
+				border-color:darken(@color_light-gray,5%);
+			}
+		}
+		.decrementBtn{
+			top:29px;
+			border-top:1px solid @color_hover_e;
+			border-bottom:1px solid @color_hover_e;
+		}
+		.incrementBtn{
+			bottom:1px;
+			border-bottom:1px solid @color_hover_e;
+		}
+
+	}
+}

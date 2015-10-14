@@ -1,0 +1,19 @@
+{
+    "name": "lightsuner/stack-codeigniter",
+    "description": "This is a wrapper for codeigniter to use it in conjunction with stackphp.com",
+    "keywords": ["codeigniter", "stackphp", "HttpKernelInterface"],
+    "authors": [
+        {
+            "name": "LightSuner",
+            "email": "lightsuner@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "StackCI\\": "src/" }
+    },
+    "require": {
+        "php": "~5.3",
+        "symfony/http-foundation": "~2.1",
+        "symfony/http-kernel": "~2.1"
+    }
+}

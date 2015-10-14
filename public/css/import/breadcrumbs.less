@@ -1,0 +1,34 @@
+.breadcrumbs{
+	padding-left:0px;
+	.breadcrumbs_item{
+		list-style:none;
+		float:left;
+		margin-right:20px;
+		margin-top:10px;
+		margin-bottom:0px;
+		position:relative;
+		.font(@color_blue, @roboto, @font-size-sm);
+		&:after{
+			position:absolute;
+			content:"/";
+			color:@color_text;
+			right:-11px;
+			top:1px;
+			font-size:@font-size-sm;
+		}
+		&.active{
+			color:@color_text;
+			.breadcrumbs_link{
+				color:@color_text;
+			}
+		}
+		.breadcrumbs_link{
+			.font(@color_blue, @roboto, @font-size-sm);
+		}
+		&:last-child{
+			&:after{
+				content:'';
+			}
+		}		
+	}
+}

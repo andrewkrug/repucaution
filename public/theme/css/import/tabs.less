@@ -1,0 +1,55 @@
+.settings_tab{
+	border-bottom:1px solid @color_hover_e;
+	.setting_item{
+		float:left;
+		width:100%/8%;
+		.setting_link{
+			border-top:1px solid @color_hover_e;
+			border-right:1px solid @color_hover_e;
+			border-left:1px solid @color_hover_e;
+			border-bottom:1px solid transparent;
+			color:@color_black;
+			margin-right:-1px;
+			.font(@color_black, @roboto, @font-size-default);
+			.border_radius(0px);
+			[class*="ti-"], .fa{
+				color:@color_blue;
+				margin-right:10px;
+				font-size:@font-size-large;
+				display: block;
+				float: left;
+			}
+		}		
+		&.active, &:hover{
+			border:none;			
+			.setting_link{				
+				border-top:1px solid @color_hover_e;
+				border-right:1px solid @color_hover_e;
+				border-left:1px solid @color_hover_e;
+				border-bottom:1px solid transparent;
+			}
+		}
+		&.active{
+			.setting_link{
+				font-weight:@font-weight-bold;
+				color:@color_blue;
+			}
+		}
+		&:hover{		
+			.setting_link{
+				background-color:@color_hover_e;
+			}
+		}
+		&.auto{
+			width:auto;
+		}
+	}	
+}
+.settings_content{
+	.tab-pane{
+		padding:20px;
+		border-bottom:1px solid @color_hover_e;
+		border-right:1px solid @color_hover_e;
+		border-left:1px solid @color_hover_e;
+	}
+}

@@ -1,0 +1,185 @@
+.nav-list li:first-child a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    font-size: 14px;
+}
+
+.nav-list li:first-child.active a {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: none;
+    border: 1px solid #E4E3E3;
+    background: #F2F2F2;
+    color: #3F6AB2;
+    text-transform: none;
+    padding: 15px;
+}
+
+.nav-list li:first-child.active a:hover {
+    background-color: #F2F2F2;
+    color: #3F6AB2;
+    text-shadow: none;
+}
+
+.configure-link {
+    color: #34538A; 
+    font-size: 14px; 
+    margin-left: 35px;
+}
+
+.formBox .sectionTitle.no-margin {
+    margin-bottom: 0px;
+}
+
+.alert-success .message {
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.alert-error.message-error {
+    margin-left: 0px;
+}
+
+.yt_butt {
+    display: block;
+    background: url('../../images/yt_butt.png') center center no-repeat;
+    width: 182px;
+    height: 32px;
+}
+.go_butt {
+    display: block;
+    background: url('../../images/go_butt.png') center center no-repeat;
+    width: 182px;
+    height: 32px;
+}
+
+.mentions_keywords_add_btn {
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.loading {
+    min-height: 70px;
+    background: url(../../images/ajax-loader.gif) center center no-repeat;
+}
+
+.ga_accounts {
+    padding-top: 30px;
+}
+
+.ga_accounts ul, .ga_accounts li {
+    margin: 0px;
+    padding: 0px;
+}
+
+.ga_accounts > ul {
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+.ga_accounts > ul:first-child > li:first-child > label:first-child {
+    margin-top: 10px;
+}
+
+.ga_accounts ul > ul > li {
+    background: none;
+}
+
+.ga_accounts li {
+    padding-left: 20px;
+    list-style: none;
+    background: url('../../images/normal.png') repeat-y 10px 0;
+    color: #333;
+    font-size: 15px;
+    line-height: 25px;
+}
+.ga_accounts li label {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    color: #555;
+    font-size: 13px;
+    margin-left: -10px;
+    padding-left: 15px;
+    vertical-align: top;
+    background: url('../../images/lastchild.png') no-repeat 0px 0px;
+    cursor: auto;
+}
+
+.ga_accounts li:last-child > label {
+    color: #555;
+    border: none;
+    background: none;
+    margin: 0px 0px 3px 5px;
+    padding: 0px;
+}
+
+.ga_accounts li label.deepest {
+    line-height: 17px;
+    cursor: pointer;
+}
+
+.ga_accounts li input {
+    margin-top: -2px;
+    margin-left: 3px;
+}
+
+.ga_accounts li:last-child {
+    background: url('http://www.jenst.se/images/lastchild.png') no-repeat 10px 0px;
+}
+
+a.black-btn:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #323232;
+}
+
+.ga_logout {
+    margin: 0px;
+    position: absolute;
+    right: 0px;
+}
+
+.ga_form {
+    position: relative;
+}
+
+.rss_settings_label {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: baseline;
+}
+
+.rss_settings_industry_save {
+    text-align: left;
+}
+
+.blockAdd .black-btn.rss_custom_add_form {
+    float: left;
+}
+
+.blockAdd .black-btn.rss_custom_save {
+    float: right;
+}
+.subscrs {
+    margin-left:15px;
+}
+ .subscrs th, .subscrs tr td {
+    border:solid 1px;
+    padding:5px;
+    text-align:center;
+    font-size:16px;
+}
+.subscrs th {
+    font-size:18px;
+}
+table.subscrs  tr.active  td {
+    background:#9CE09C;
+}
+table.subscrs  tr.over  td {
+    background:#E79A97;
+}
+.add-pay {
+    margin:15px;
+}

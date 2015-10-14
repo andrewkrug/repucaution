@@ -1,0 +1,69 @@
+.tree-folder{
+	padding:0px;
+	margin:0px;
+	margin-left: 8px;
+	/*.tree-folder_item{
+		list-style:none;
+		border-left: 1px solid @color_border;
+		border-bottom: 1px solid @color_border;
+		padding-top: 10px;
+		padding-left: 30px;		
+		margin-left: 10px;
+		p, label{
+			background-color:@color_white;
+			position:relative;				
+			top:15px;	
+			display: inline-block;	
+		}
+		.tree-folder_item_list{
+			padding:0px;
+			margin:0px;
+			.tree-folder_item_list_point{
+				list-style:none;
+				border-left: 1px solid @color_border;
+				border-bottom: 1px solid @color_border;
+				padding-top: 10px;
+				padding-left: 10px;		
+				margin-left: 10px;
+			}
+		}
+	}*/
+	li{
+		list-style:none;
+		position:relative;
+		p{
+			border-left:1px solid @color_border;
+			border-bottom:1px solid @color_border;
+			padding-top:10px;
+			padding-left:10px;				
+			display: block;
+			//margin-left:10px;
+			background-color:@color_white;
+			margin-bottom:0px;
+			text-transform: capitalize;
+			.font(@color_black, @roboto, @font-size-strong);			
+			.tree-folder_item_name, label{
+				position:relative;	
+				background-color:@color_white;
+				.font(@color_black, @roboto, @font-size-strong);
+				top:13px;
+				z-index:1;
+				display: block;
+				padding-left:5px;
+			}
+		}
+		ul{
+			list-style:none;
+			li{
+				border-left: 1px solid @color_border;
+				padding-left: 25px;
+
+			}
+		}
+		&:last-child{
+			li{
+				border-left: none;
+			}
+		}
+	}
+}

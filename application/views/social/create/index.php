@@ -1,0 +1,1 @@
+<?php echo $this->template->block('_nav', 'social/create/blocks/_navigation');?>

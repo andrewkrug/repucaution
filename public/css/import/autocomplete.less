@@ -1,0 +1,26 @@
+.autocomplete_block{
+	position:relative;
+	.ui-autocomplete{
+		width:100%;
+		position:absolute;
+		top:100%;
+		list-style:none;
+		padding:0;
+		z-index:9999;
+		border:1px solid @color_border;
+		background-color:@color_white;
+		.ui-menu-item{
+			padding:3px 0px 3px 10px;
+			width:100%;
+			color:@color_black;
+			font-size:14px;
+			&:hover{
+				background-color:@color_blue;
+				color:@color_white;
+			}
+		}
+	}
+}
+.ui-helper-hidden-accessible{
+	display:none;
+}

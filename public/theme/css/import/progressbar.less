@@ -1,0 +1,24 @@
+@progressbar:100;
+.progressBar (@index) when (@index > -1){
+	.progressBar{
+		.progressLine[data-value="@{index}"]{
+			width:@index * 1%;
+		}
+	}
+	.progressBar (@index - 1);
+}
+.progressBar(0){};
+.progressBar (@progressbar);
+
+.progressBar{
+	height: 2px;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: lighten(@color_blue, 20%);
+	.progressLine{
+		height:100%;
+		position:relative;
+		background-color:@color_blue;
+	}
+}

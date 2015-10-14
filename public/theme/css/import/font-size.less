@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/segoeui.eot');
+    src: local("Segoe UI"),
+         local("Segoe"),
+         local("Segoe WP"),
+         url('../fonts/segoeui.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/segoeui.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-weight-thin   	: 100;
+@font-weight-light  	: @font-weight-thin  + 200;     //~300
+@font-weight-normal 	: @font-weight-light + 100;     //~400
+@font-weight-regular	: @font-weight-normal;
+@font-weight-medium 	: @font-weight-normal + 100;   	//~500
+@font-weight-bold   	: @font-weight-medium + 200;   	//~700
+@font-weight-ultra-bold : @font-weight-bold + 200; 		//~900
+
+/*-------------[ font size ]----------------*/
+
+@font-size-default	: 13px;
+@font-size-large 	: @font-size-default + 3; //~16px
+@font-size-strong 	: @font-size-default + 2; //~15px
+@font-size-lg	  	: @font-size-default + 1; //~14px
+@font-size-sm     	: @font-size-default - 1; //~12px
+@font-size-xs     	: @font-size-default - 2; //~11px
+@font-size-small	: @font-size-default - 3; //~10px
+@font-size-little 	: @font-size-default - 4; //~9px
+
+@font-size-big			: @font-size-sm*2; // 24px
+@font-size-lg-big		: @font-size-lg*2; // 28px
+@font-size-xs-big		: @font-size-xs*2; // 22px
+@font-size-small-big 	: @font-size-small*2; // 20px
+@font-size-little-big	: @font-size-little*2; //18px
+
+@font-size-fa			: 30px;
+
+/*-------------[ help family ]----------------*/
+
+@roboto		:'Roboto', sans-serif;
+@montSerrat	:'Montserrat', sans-serif;
+@lato 		:'Lato', sans-serif;
+@helvetica 	: Helvetica,Arial,sans-serif;
+@raleway 	:'Raleway', sans-serif;
+@segue 		:'Segoe UI';
+
+.regRoboto{
+	font-family: 'Roboto', sans-serif;
+	font-weight:@font-weight-regular;
+}
+.lightRoboto{
+	font-family: @roboto;
+	font-weight:@font-weight-light;
+}
+.montSerrat{
+	font-family: @montSerrat;
+}
+.laTo{
+	font-family: @lato;
+}
+.raleway{
+	font-family: @raleway;
+}
+.helvetica{
+	font-family: @helvetica;
+}
+
+/*-------------[ font-weight ]----------------*/
+.bold{
+	font-weight:@font-weight-bold;
+}
+
+/*-------------[ font-size ]----------------*/
+.large-size{
+	font-size:@font-size-large;
+}
+.strong-text{
+	font-size:@font-size-small-big
+}
+.strong-size{
+	font-size:@font-size-lg;
+}
+.text-size{
+	font-size:@font-size-sm;
+}
+.smallText{
+	font-size:@font-size-xs;
+}
+
+/*-------------[ Typography ]----------------*/
+h1{
+	font-size:@font-size-small-big;
+}
+h2{
+	font-size:@font-size-little-big;
+}
+h3{
+	font-size:@font-size-large;
+}
+h4{
+	font-size:@font-size-lg;
+}
+h5{
+	font-size: @font-size-sm;
+}
+h6{
+	font-size: @font-size-xs;
+}

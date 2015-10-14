@@ -1,0 +1,14 @@
+{
+    "name": "lightsuner/plan-features-acl",
+    "description": "Provide some subscription plans & features interfaces and ACL for them.",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "autoload": {"psr-0": {"": "src"}},
+    "config": {
+        "bin-dir": "bin"
+    },
+    "require-dev": {
+        "phpspec/phpspec":"2.0.*@dev"
+    }
+
+}
