@@ -2,7 +2,7 @@
 
 Repucaution is a social media marketing solution designed to improve online presence. The tool helps to manage and analyze social media channels, track brand mentions, reviews and monitor web traffic:
 
--	Web Radar shows social media results based on your keywords. Track your brand mentions and interact with influencers. 
+-	[Web Radar](http://repucaution.com/knowledge-base/social_crm:web_radar_-_user_s_guide) shows social media results based on your keywords. Track your brand mentions and interact with influencers. 
 -	Google Rank provides a solid overview of keyword phrases in Google Places. 
 -	Reviews from local directories are collected in section Reviews
 -	Analytics gives a precise picture of web traffic calculation
