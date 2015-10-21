@@ -6,7 +6,7 @@ Repucaution is a social media marketing solution designed to improve online pres
 -	Google Rank provides a solid overview of keyword phrases in Google Places. 
 -	Reviews from local directories are collected in section Reviews
 -	Analytics gives a precise picture of web traffic calculation
--	
+
 Repucaution includes Twitter marketing tools to increase following on Twitter: 
 
 -	Auto-follow and unfollow users
@@ -14,7 +14,7 @@ Repucaution includes Twitter marketing tools to increase following on Twitter:
 -	Auto-retweet
 -	Set limiting criteria for auto following
 -	Create a welcome message and discover many more features
--	
+
 The software helps to manage your social media channels from one section: create immediate or scheduled posts, track social activity and view social reports. Use .csv files for bulk upload or set up recurring posts. 
 
 Use of CRM directory is good way to save your contacts and monitor their activity in social media. 
@@ -25,7 +25,7 @@ Repucaution is a powerful solution for social media tracking and reputation moni
 
 ======
 
-## Documantation:
+## Documentation:
 1. [Menu](doc/menu/menu.md)
 2. [ORM](doc/orm/datamapper.md)
 3. [Payment gateways](doc/payment/gateways.md)
