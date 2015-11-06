@@ -1,6 +1,4 @@
 .idea/
-system/
-application/vendor/
 application/config/activemq.php
 application/config/database.php
 application/config/deploy.php
@@ -9,4 +7,3 @@ application/config/demo_settings.php
 vendor/.git
 tmp_uploads/*
 !tmp_uploads/.gitkeep
-deploy.logpublic/themes/
